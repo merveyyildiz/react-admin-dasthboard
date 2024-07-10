@@ -32,7 +32,7 @@ const Team = () => {
       flex: 1,
     },
     {
-      field: "Email",
+      field: "email",
       headerName: "Email",
       flex: 1,
     },
