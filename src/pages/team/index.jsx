@@ -24,8 +24,7 @@ const Team = () => {
       headerName: "Age",
       type: "number",
       headerAlign: "left",
-      align: "left",
-      cellClassName: "name-column-cell",
+      align: "left"
     },
     {
       field: "phone",
