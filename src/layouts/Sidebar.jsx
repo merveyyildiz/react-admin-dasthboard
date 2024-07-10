@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Sidebar as SideBarPro, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-import { tokens } from "../../theme";
+import { tokens } from "../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
@@ -47,7 +47,7 @@ const SideBar = () => {
         "& .ps-sidebar-root": {
           border: "none !important",
           height: "100%",
-        }
+        },
       }}
     >
       <SideBarPro
@@ -58,7 +58,7 @@ const SideBar = () => {
           },
           "& .ps-menu-button": {
             backgroundColor: "transparent !important",
-            height: "40px"
+            height: "40px !important"
           },
           "& .ps-menu-button:hover": {
             color: "#868dfb !important",
