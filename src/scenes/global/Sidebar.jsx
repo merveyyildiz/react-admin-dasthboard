@@ -44,22 +44,30 @@ const SideBar = () => {
         "& .ps-sidebar-container": {
           backgroundColor: `${colors.primary[400]} !important`,
         },
-        "& .ps-menu-button": {
-          backgroundColor: "transparent !important",
-        },
         "& .ps-sidebar-root": {
           border: "none !important",
           height: "100%",
-        },
-        "& .ps-menu-button:hover": {
-          color: "#868dfb !important",
-        },
-        "& .ps-menu-button:active": {
-          color: "#6870fa !important",
-        },
+        }
       }}
     >
-      <SideBarPro collapsed={isCollapsed}>
+      <SideBarPro
+        collapsed={isCollapsed}
+        rootStyles={{
+          "& .ps-sidebar-container": {
+            backgroundColor: `${colors.primary[400]} !important`,
+          },
+          "& .ps-menu-button": {
+            backgroundColor: "transparent !important",
+            height: "40px"
+          },
+          "& .ps-menu-button:hover": {
+            color: "#868dfb !important",
+          },
+          "& .ps-menu-button:active": {
+            color: "#6870fa !important",
+          },
+        }}
+      >
         <Menu>
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
