@@ -58,7 +58,7 @@ const SideBar = () => {
           },
           "& .ps-menu-button": {
             backgroundColor: "transparent !important",
-            height: "40px !important"
+            height: "40px !important",
           },
           "& .ps-menu-button:hover": {
             color: "#868dfb !important",
@@ -69,6 +69,7 @@ const SideBar = () => {
         }}
       >
         <Menu>
+          {/** LOGO  */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
