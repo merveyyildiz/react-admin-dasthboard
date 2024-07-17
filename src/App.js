@@ -7,8 +7,9 @@ import Dashboard from "./pages/dashboard";
 import Team from "./pages/team";
 import Contacts from "./pages/contacts";
 import Invoices from "./pages/invoices";
+import ProfileForm from "./pages/profileForm";
 // import Bar from "./pages/bar";
-// import Form from "./pages/form";
+
 // import Line from "./pages/line";
 // import Pie from "./pages/pie";
 // import FAQ from "./pages/faq";
@@ -31,8 +32,9 @@ function App() {
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
+              <Route path="/profile-form" element={<ProfileForm />} />
               {/*<Route path="/bar" element={<Bar />} />
-              <Route path="/form" element={<Form />} />
+             
               <Route path="/line" element={<Line />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/faq" element={<FAQ />} />
