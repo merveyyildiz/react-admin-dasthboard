@@ -9,11 +9,12 @@ import Contacts from "./pages/contacts";
 import Invoices from "./pages/invoices";
 import ProfileForm from "./pages/profileForm";
 import Calendar from "./pages/calendar";
+import FAQ from "./pages/faq";
 // import Bar from "./pages/bar";
 
 // import Line from "./pages/line";
 // import Pie from "./pages/pie";
-// import FAQ from "./pages/faq";
+
 
 // import Geography from "./pages/geography";
 
@@ -35,11 +36,12 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/profile-form" element={<ProfileForm />} />
               <Route path="/calendar" element={<Calendar />} />
+              <Route path="/faq" element={<FAQ />} />
               {/*<Route path="/bar" element={<Bar />} />
              
               <Route path="/line" element={<Line />} />
               <Route path="/pie" element={<Pie />} />
-              <Route path="/faq" element={<FAQ />} />
+              
               <Route path="/geography" element={<Geography />} />
        */}
             </Routes>
