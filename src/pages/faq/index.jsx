@@ -14,7 +14,7 @@ const FAQ = () => {
   return (
     <Box m="20px">
       <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
-      <Box sx={{ margin: "40px 0 0 0", backgroundColor: colors.primary[400] }}>
+      <Box sx={{ margin: "40px 0 0 0" }}>
         {faqData.map((data) => (
           <Accordion
             key={data.id}
