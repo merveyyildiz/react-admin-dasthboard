@@ -1,5 +1,5 @@
 import React from "react";
-import StatBox from "./StatBox";
+import StatBox from "../components/StatBox";
 
 export default {
     title: "Components/StatBox",

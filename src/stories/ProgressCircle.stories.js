@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressCircle from "./ProgressCircle";
+import ProgressCircle from "../components/ProgressCircle";
 
 export default {
     title: "components/ProgressCircle",
