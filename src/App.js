@@ -1,19 +1,67 @@
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import Topbar from "./layouts/Topbar";
 import SideBar from "./layouts/Sidebar";
-import Dashboard from "./pages/dashboard";
-import Team from "./pages/team";
-import Contacts from "./pages/contacts";
-import Invoices from "./pages/invoices";
-import ProfileForm from "./pages/profileForm";
-import Calendar from "./pages/calendar";
-import FAQ from "./pages/faq";
-import Bar from "./pages/bar";
-import Pie from "./pages/pie";
-import Line from "./pages/line";
-import Geography from "./pages/geography";
+
+const routes = [
+  {
+    path: "/",
+    name: "homePage",
+    page: lazy(() => import("./pages/dashboard/index"))
+  },
+  {
+    path: "/team",
+    name: "teamPage",
+    page: lazy(() => import("./pages/team/index"))
+  },
+  {
+    path: "/contacts",
+    name: "contactPage",
+    page: lazy(() => import("./pages/contacts/index"))
+  },
+  {
+    path: "/invoices",
+    name: "invoicesPage",
+    page: lazy(() => import("./pages/invoices/index"))
+  },
+  {
+    path: "/profile-form",
+    name: "profileFormPage",
+    page: lazy(() => import("./pages/profileForm/index"))
+  },
+  {
+    path: "/calendar",
+    name: "calendarPage",
+    page: lazy(() => import("./pages/calendar/index"))
+  },
+  {
+    path: "/faq",
+    name: "faqPage",
+    page: lazy(() => import("./pages/faq/index"))
+  },
+  {
+    path: "/bar",
+    name: "barPage",
+    page: lazy(() => import("./pages/bar/index"))
+  },
+  {
+    path: "/pie",
+    name: "piePage",
+    page: lazy(() => import("./pages/pie/index"))
+  },
+  {
+    path: "/line",
+    name: "linePage",
+    page: lazy(() => import("./pages/line/index"))
+  },
+  {
+    path: "/geography",
+    name: "geography",
+    page: lazy(() => import("./pages/geography/index"))
+  }
+];
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -27,17 +75,9 @@ function App() {
           <main className="content">
             <Topbar />
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/contacts" element={<Contacts />} />
-              <Route path="/invoices" element={<Invoices />} />
-              <Route path="/profile-form" element={<ProfileForm />} />
-              <Route path="/calendar" element={<Calendar />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} />
-              <Route path="/geography" element={<Geography />} />
+              {routes.map((item) => (
+                <Route path={item.path} key={item.name} element={<Suspense fallback={<div>Loading...</div>}><item.page /></Suspense>} />
+              ))}
             </Routes>
           </main>
         </div>
