@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+## 📖 Hakkında
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proje React.js 18 sürümünü kullanıyor.
 
-## Available Scripts
+### 📚Tech Stack
 
-In the project directory, you can run:
+<table>
+<tr>
+  <td> <a href="https://react.dev/">React.js 18</a></td>
+  <td>Web frameworklerden birisi</td>
+</tr>
+<tr>
+  <td> <a href="https://formik.org/docs/overview">Formik</a></td>
+  <td>React.js de From oluşturmayı sağlayan kütüphanelerden birisi</td>
+</tr>
+<tr>
+  <td> <a href="https://github.com/jquense/yup">Yup</a></td>
+  <td>Form validasyon yapmamızı sağlayan kütüphanelerden birisi</td>
+</tr>
+<tr>
+  <td> <a href="https://github.com/azouaoui-med/react-pro-sidebar#readme">React Pro Sidebar</a></td>
+  <td>React'ta etkileşimli sidebar oluşturmayı sağlayan kütüphane.</td>
+</tr>
+<tr>
+  <td> <a href="https://nivo.rocks/">Nivo</a></td>
+  <td>React'ta grafik veya chart oluşturmayı sağlayan kütüphane</td>
+</tr>
+<tr>
+  <td> <a href="https://fullcalendar.io/docs/react">Full Calendar</a></td>
+  <td>Takvim görüntülememizi sağlayan kütüphane</td>
+</tr>
+<tr>
+  <td> <a href="https://mui.com/material-ui/material-icons/">MUI Icons</a></td>
+  <td>Icons göstermemizi sağlayan kütüphane</td>
+</tr>
+<tr>
+  <td> <a href="https://emotion.sh/docs/introduction">Emotion/react</a></td>
+  <td>Js içerisinde css yazmayı sağlayan kütüphane</td>
+</tr>
+</table>
 
-### `npm start`
+## Başlarken
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📦 Gerekinimler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node (v20.0+)
 
-### `npm test`
+### ⚙️ Nasıl Kullanılır
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Projeyi clone'la
 
-### `npm run build`
+```
+git clone https://github.com/merveyyildiz/react-admin-dasthboard.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Proje dizinine terminal ile ilerle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd react-admin-dashboard
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Bağımlılıkları yükle
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Development server&#x27;ı ayağa kaldır
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bu adımlardn sonra proje [localhost:3000](localhost:3000) adresinde ayağa kalkacaktır
